@@ -1,0 +1,151 @@
+<%@ page language="java" import="java.util.*"
+	contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@include file="/context/mytags.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<title>督导任务新建</title>
+<t:base type="jquery,easyui,tools,DatePicker"></t:base>
+ <link rel="stylesheet" type="text/css" href="plug-in/dudao/css/dudao.css" />
+<script type="text/javascript"
+	src="plug-in/jquery-plugs/form/jquery.form.js"></script>
+</head>
+
+<body>
+	<div class="councilor-table">
+		<div class="councilor-table-main1">
+			<h4>活动详情查看</h4>
+		</div>
+		<div class="councilor-table-main2">
+			<div class="table-div1">
+				<h5>活动详情</h5>
+				<ul class="activity-ul">
+					<li><span>督导任务名称：</span><span>XXX</span></li>
+					<li><span>督导任务编码：</span><span>XXX</span></li>
+					<li><span>督导人员：</span><span>XXX</span></li>
+					<li><span>督导时间：</span><span>XXX</span></li>
+					<li><span>任务状态：</span><span>XXX</span></li>
+					<li><span>督导任务描述：</span><span>XXX</span></li>
+					<li><span>已执行门店数：</span><span>XXX</span></li>
+					<li><span>已执行占比关联门店：</span><span>XXX</span></li>
+					<li><span>已督导门店数：</span><span>XXX</span></li>
+					<li><span>已督导占比已执行：</span><span>XXX</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<div class="easyui-layout" style="width: 900px; height: 300px;">
+				<div data-options="region:'center'">
+					<t:datagrid name="showCostTypeRelList" title="活动执行/督导详情"
+						actionUrl="" autoLoadData="false" fit="true" fitColumns="true"
+						idField="id" pagination="false">
+						<t:dgCol title="id" field="id" hidden="true" queryMode="single"
+							width="120"></t:dgCol>
+						<t:dgCol title="序号" field="name" hidden="false"></t:dgCol>
+						<t:dgCol title="门店名称" field="num" hidden="false"></t:dgCol>
+						<t:dgCol title="渠道类型" field="actTemName" hidden="false"></t:dgCol>
+						<t:dgCol title="门店类型" field="realName" hidden="false"></t:dgCol>
+						<t:dgCol title="执行人员" field="departName" hidden="false"></t:dgCol>
+						<t:dgCol title="所属职位" field="name" hidden="false"></t:dgCol>
+						<t:dgCol title="执行人员入店时间" field="num" hidden="false"></t:dgCol>
+						<t:dgCol title="执行人员离店时间" field="actTemName" hidden="false"></t:dgCol>
+						<t:dgCol title="督导人员" field="realName" hidden="false"></t:dgCol>
+						<t:dgCol title="督导入店时间" field="departName" hidden="false"></t:dgCol>
+						<t:dgCol title="门店是否符合活动要求" field="actTemName" hidden="false"></t:dgCol>
+						<t:dgCol title="活动执行督导结果" field="realName" hidden="false"></t:dgCol>
+						<t:dgCol title="活动详细信息" field="departName" hidden="false"></t:dgCol>
+					</t:datagrid>
+				</div>
+			</div>
+		</div>
+
+		<div class="councilor-table-main2">
+			<div class="table-div1">
+				<h5>督导意见</h5>
+			</div>
+		</div>
+
+		<div>
+			<div class="easyui-layout" style="width: 900px; height: 300px;">
+				<div data-options="region:'center'">
+					<t:datagrid name="showCostTypeRelList1" title="活动物料督导结果"
+						actionUrl="" autoLoadData="false" fit="true" fitColumns="true"
+						idField="id" pagination="false">
+						<t:dgCol title="id" field="id" hidden="true" queryMode="single"
+							width="120"></t:dgCol>
+						<t:dgCol title="序号" field="name" hidden="false"></t:dgCol>
+						<t:dgCol title="产品层次名称" field="num" hidden="false"></t:dgCol>
+						<t:dgCol title="产品层次编码" field="actTemName" hidden="false"></t:dgCol>
+						<t:dgCol title="产品系列" field="realName" hidden="false"></t:dgCol>
+						<t:dgCol title="产品类型" field="departName" hidden="false"></t:dgCol>
+						<t:dgCol title="关联品项的活动门店" field="name" hidden="false"></t:dgCol>
+						<t:dgCol title="占比所执行活动门店" field="num" hidden="false"></t:dgCol>
+						<t:dgCol title="督导关联品项活动门店" field="actTemName" hidden="false"></t:dgCol>
+						<t:dgCol title="占比所有督导门店" field="realName" hidden="false"></t:dgCol>
+					</t:datagrid>
+				</div>
+			</div>
+		</div>
+
+		<div class="councilor-table-main2">
+			<div class="table-div2">
+				<div style="padding: 1% 0;">活动执行督导结果</div>
+				<table border="1" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<td>虚假执行门店数</td>
+							<td>活动效果好门店数</td>
+							<td>活动效果差门店数</td>
+							<td>虚假执行门店占比</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="councilor-table-main2">
+			<div class="table-div2">
+				<div style="padding: 1% 0;">门店是否符合活动要求</div>
+				<table border="1" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<td>符合活动要求门店数</td>
+							<td>不符合活动要求门店数</td>
+							<td>不符合活动要求门店数</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="councilor-table-main2">
+			<div class="table-div2">
+				<ul>
+					<li><span>督导人员：</span><span>xxx</span></li>
+					<li><span class="textarea-span">督导意见：</span><textarea  rows="5" cols="60"></textarea></li>
+					<li><span class="textarea-span">原因描述：</span><textarea  rows="5" cols="60"></textarea></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

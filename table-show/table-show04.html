@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>门店活动详情/督导详情</title>
+		<link rel="stylesheet" type="text/css" href="css/jihe-page.css" />
+	</head>
+
+	<body>
+		<div class="councilor-table">
+			<div class="councilor-table-main1">
+				<h4>门店活动执行/督导详情</h4>
+				<span id="close-icon">X</span>
+			</div>
+			<div class="councilor-table-main2 councilor-table-main4">
+
+				<div class="table-div2 table-div4">
+					<h5>督导活动描述：</h5>
+					<div>
+						<textarea rows="5" cols="80"></textarea>
+					</div>
+				</div>
+				<div class="table-div2">
+					<h5>门店地址</h5>
+					<ul class="activity-ul">
+						<li><span>活动执行gps定位：</span><span>XXX</span></li>
+						<li><span>位置偏差：</span><span>XXX</span></li>
+						<li><span>督导执行gps定位：</span><span>XXX</span></li>
+						<li><span>位置偏差：</span><span>XXX</span></li>
+					</ul>
+				</div>
+				<div class="table-div2 table-div4">
+					<div class="show-img">
+						<h5>活动照片</h5>
+						<ul class="example-img" >
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+						</ul>
+					</div>
+					<div class="show-img">
+						<h5>督导照片</h5>
+						<ul class="example-img">
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+							<li><img src="img/1.jpg" alt="" /></li>
+						</ul>
+					</div>
+					<div class="wuliao">
+						<h5>督导关联物料</h5>
+						<table border="1" cellspacing="0" cellpadding="0">
+							<thead>
+								<tr>
+									<td>产品层次名称</td>
+									<td>产品层次编码</td>
+									<td>产品系列</td>
+									<td>产品类型</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+									<td>1</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script>
+			$(function() {
+				$(".example-img li").each(function() {
+					$(".example-img li").hover(function() {
+						$(".example-img li img").removeClass("big-img");
+						$(this).find("img").addClass("big-img");
+					}, function() {
+						$(".example-img li img").removeClass("big-img");
+					});
+				});
+			});
+			
+			/*$(function(){
+				$(".example-img li").each(function(){
+					$(".example-img li").on("mouseenter",function(){
+						$(".example-img li img").removeClass("big-img");
+						$(this).find("img").addClass("big-img");
+					});
+					$(".example-img li").on("mouseleave",function(){
+						$(".example-img li img").removeClass("big-img");
+					});
+				});
+			});*/
+		</script>
+	</body>
+
+</html>

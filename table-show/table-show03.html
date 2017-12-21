@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>活动详情查看</title>
+		<link rel="stylesheet" type="text/css" href="css/jihe-page.css" />
+	</head>
+
+	<body>
+		<div class="councilor-table councilor-table-show03">
+			<div class="councilor-table-main1">
+				<h4>活动详情查看</h4>
+				<span id="close-icon">X</span>
+			</div>
+			<div class="councilor-table-main2">
+				<div class="table-div1">
+					<h5>活动详情</h5>
+					<ul class="activity-ul">
+						<li><span>督导任务名称：</span><span>XXX</span></li>
+						<li><span>督导任务编码：</span><span>XXX</span></li>
+						<li><span>督导人员：</span><span>XXX</span></li>
+						<li><span>督导时间：</span><span>XXX</span></li>
+						<li><span>任务状态：</span><span>XXX</span></li>
+						<li><span>督导任务描述：</span><span>XXX</span></li>
+						<li><span>已执行门店数：</span><span>XXX</span></li>
+						<li><span>已执行占比关联门店：</span><span>XXX</span></li>
+						<li><span>已督导门店数：</span><span>XXX</span></li>
+						<li><span>已督导占比已执行：</span><span>XXX</span></li>
+					</ul>
+				</div>
+				
+				<div class="table-div2">
+					<h5>活动执行督导结果</h5>
+					<table border="1" cellspacing="0" cellpadding="20">
+						<thead>
+							<tr>
+								<td>虚假执行门店数</td>
+								<td>活动效果好门店数</td>
+								<td>活动效果差门店数</td>
+								<td>虚假执行门店占比</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+								<td>1</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.11.3.js"></script>
+		<script>
+			$(function() {
+				$("#close-icon").on("click", function() {
+					$(".councilor-table").hide(500);
+				});
+			});
+		</script>
+	</body>
+
+</html>
