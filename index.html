@@ -32,7 +32,7 @@
 		
 		<!--loading加载-->
 		<div class="loading">
-			<p  class="propress" id="propress">0%</p>
+			<p id="propress">0%</p>
 		</div>
 
 		<div class="dowebok" id="dowebok">
@@ -147,6 +147,13 @@
 
 
 
+		
+		<!--Jquery-Scrollify 插件整屏滚动效果引用文件-->
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<!--Jquery-Scrollify 插件整屏滚动效果代码-->
+		
 		<script>
 			/*Math.max描述：
 			 返回给定的一组数字中的最大值。如果给定的参数中至少有一个参数无法被转换成数字，则会返回 NaN
@@ -194,7 +201,7 @@
 
 				var index = 0; //  表示当前是第几张图片
 				var len = imgs.length; //  表示图片数组的长度
-				var progress = document.getElementById("propress"); //  获取进度
+				var $progress = $('.propress'); //  获取进度
 				count = 0; //  计数器，默认为0
 
 				//	图片预加载就是要把所有的图片预先加载出来。所以，这里需要用each()把所有图片路径遍历出来
@@ -206,7 +213,7 @@
 					//	这里除了load，还要用error事件，否则当其中一张图片无法正常显示时，就会一直显示loading进度
 					$(imObj).on('load error', function() {
 						//	这句代码是计算出已加载图片占总图片的百分比，也就是显示在页面loading加载进度的进度值。并且用Math.round()转换为整数,避免出现小数
-						progress.html(Math.round((count + 1) / len * 100) + '%');
+						$progress.html(Math.round((count + 1) / len * 100) + '%');
 
 						/*这里的len-1是得到最后一张图片，因为数组的下标是从0开始，不是从1开始，所以要得到最后一张图片，就要用length-1*/
 						if(count >= len - 1) {
@@ -223,13 +230,6 @@
 					imObj.src = src;
 				});
 			}
-		</script>
-		<!--Jquery-Scrollify 插件整屏滚动效果引用文件-->
-		<link rel="stylesheet" href="css/jquery.fullPage.css">
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/jquery.fullPage.min.js"></script>
-		<!--Jquery-Scrollify 插件整屏滚动效果代码-->
-		<script>
 			
 			$(function() {
 				$('#dowebok').fullpage({
