@@ -32,7 +32,7 @@
 		
 		<!--loading加载-->
 		<div class="loading">
-			<p class="propress">0%</p>
+			<p  class="propress" id="propress">0%</p>
 		</div>
 
 		<div class="dowebok" id="dowebok">
@@ -194,7 +194,7 @@
 
 				var index = 0; //  表示当前是第几张图片
 				var len = imgs.length; //  表示图片数组的长度
-				var $progress = $('.propress'); //  获取进度
+				var $progress = document.getElementById("propress"); //  获取进度
 				count = 0; //  计数器，默认为0
 
 				//	图片预加载就是要把所有的图片预先加载出来。所以，这里需要用each()把所有图片路径遍历出来
