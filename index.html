@@ -151,8 +151,7 @@
 		<script src="js/jquery.fullPage.min.js"></script>
 		<!--Jquery-Scrollify 插件整屏滚动效果代码-->
 		<script>
-			//  loading加载
-
+			
 			/*Math.max描述：
 			 返回给定的一组数字中的最大值。如果给定的参数中至少有一个参数无法被转换成数字，则会返回 NaN
 			 
@@ -161,9 +160,12 @@
 			如果没有参数，则结果为 - Infinity。
 
 			如果有任一参数不能被转换为数值，则结果为 NaN。
-					 */
+			*/
+			
+			//  图片预加载
+			preloading();
 
-			window.onload = function() {
+			function preloading() {
 				var imgs = [
 					'img/beijingyun.png',
 					'img/kuaihe.png',
