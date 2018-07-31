@@ -163,9 +163,12 @@
 
 			如果有任一参数不能被转换为数值，则结果为 NaN。
 			*/
+			preloading();
+			
 			
 			//  图片预加载
-			$(function(){
+			function preloading () {
+	
 				var imgs = [
 					'img/more.png',
 					'img/kuaihe.png',
@@ -213,7 +216,8 @@
 					});
 					imObj.src = src;
 				});
-			});
+			}
+			
 			
 			$(function() {
 				$('#dowebok').fullpage({
