@@ -29,8 +29,15 @@
 	</head>
 
 	<body>
+		
+		
 
 		<div class="dowebok" id="dowebok">
+			<!--loading加载-->
+		<div class="loading">
+			<img src="img/timg.gif"/>
+			<p class="propress">0%</p>
+		</div>
 			<div class="section">
 				<div style="position: relative;">
 					<img style="width: 100%;" id="beijingyun" src="img/beijingyun.png" />
@@ -140,11 +147,6 @@
 			</div>
 		</div>
 
-		<!--loading加载-->
-		<div class="loading">
-			<p class="propress">0%</p>
-		</div>
-
 		
 		<!--Jquery-Scrollify 插件整屏滚动效果引用文件-->
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
@@ -166,6 +168,9 @@
 			//  图片预加载
 			$(function(){
 				var imgs = [
+					'img/more.png',
+					'img/beijingyun.png',
+					'img/xingkong.jpg',
 					'img/kuaihe.png',
 					'img/changjia.png',
 					'img/xiaofeizhe.png',
@@ -191,9 +196,6 @@
 //					'img/gongyinglian-11.png',
 //					'img/hezuozhaoshang-12.png',
 //					'img/kuaihe-13.png',
-					'img/more.png',
-					'img/beijingyun.png',
-					'img/xingkong.jpg'
 				];
 
 				var index = 0; //  表示当前是第几张图片
