@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<!--让360浏览器默认使用极速模式，而不是使用ie兼容模式打开网页-->
-		<!--<meta name="renderer" content="webkit" />-->
+		<meta name="renderer" content="webkit" />
 		<title>1919生态圈全景图 | 1919酒类直供</title>
 		<style type="text/css">
 			img {
@@ -150,9 +150,10 @@
 		</div>
 
 		<!--defer属性可以实现异步加载。即：html文档和js脚本文件可以同时加载（浏览器加载脚本文件时不会加载其它资源文件）
-			并且这个时候虽然同时在加载脚本文件，但是不会执行。要等到全部文档加载完毕以后才会执行
+			并且这个时候虽然同时在加载脚本文件，但是不会执行。要等到全部文档加载完毕以后才会执行.不过只有IE支持该属性
 		-->
-		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://apps.bdimg.com/libs/jquery/0.1.4/jquery.min.js"></script>
+		<script>window.jQuery||document.write("<script src='js/jquery-1.11.3.js'></script>")</script>
 		<script defer="defer" src="https://apps.bdimg.com/libs/jquery-fullPage/2.7.4/jquery.fullPage.js"></script>
 		<!--Jquery-Scrollify 插件整屏滚动效果代码-->
 		
