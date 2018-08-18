@@ -154,7 +154,11 @@
 		-->
 		<script src="https://apps.bdimg.com/libs/jquery/0.1.4/jquery.min.js"></script>
 		<!--CND失效的话就会执行下面本地的js代码-->
-		<script>window.jQuery || document.write(unescape('%3Cscript src="js/jquery-1.11.3.js"%3E%3C/script%3E'))</script>
+		<script>
+			if (typeof jQuery == 'undefined') {
+				document.write(unescape('%3Cscript src="js/jquery-1.11.3.js"%3E%3C/script%3E'))
+			}
+		</script>
 		<script defer="defer" src="https://apps.bdimg.com/libs/jquery-fullPage/2.7.4/jquery.fullPage.js"></script>
 		<!--Jquery-Scrollify 插件整屏滚动效果代码-->
 		
