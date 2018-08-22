@@ -1,0 +1,65 @@
+img {
+	border: 0;
+}
+
+.loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	/*这里的宽高百分比继承自父类或者父类的父类，所以上面给html和body设置height:100%;这样这里就可以继承到了*/
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-size: 30px;
+	background-color: #eee;
+}
+
+.propress {
+	margin-top: 300px;
+}
+
+/*-----------------------------------*/
+.section01 {position: relative;}
+.section01 a {cursor: pointer;}
+.section01 a.nocursor {cursor: none;}
+.kuaihe {position: absolute;top: 48%;left: 45%;display: block;width: 157px;height: 159px;z-index: 3;}
+.changjia {position: absolute;top: 4%;left: 44.5%;display: block;height: 180px;}
+.xiaofeizhe {position: absolute;top: 70%;left: 44.5%;display: block;height: 180px;}
+.yixiang {position: absolute;top: 32%;left: 15%;display: block;}
+.jingpin {position: absolute;top: 37%;left: 24%;display: block;}
+.gebicangku {position: absolute;top: 26%;left: 35%;display: block;}
+.putaojiu {position: absolute;top: 42%;left: 35%;z-index: 3;display: block;}
+.goujiuwang {position: absolute;top: 26%;left: 58%;display: block;}
+.pinpaishangcheng {position: absolute;top: 40%;left: 55%;display: block;z-index: 3;}
+.zuishanggongfu {position: absolute;top: 37%;left: 66%;display: block;}
+.tianshengjuepei {position: absolute;top: 32%;left: 77%;display: block;}
+.yunpingtai {position: absolute;top: 25%;left: 40.5%;display: block;height: 260px;}
+.beijingyun {width: 100%;}
+.bg-xingkong {width: 100%;height: 1050px;position: relative;z-index: 1;}
+.bg-yunpingtai {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-jingxuanshangcheng {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-pinpaishangcheng {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-zuishanggongfu {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-gebicangku {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-putaojiu {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-goujiuwang {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-tianshengjuepei {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-yixiang {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-jiumama {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-gongyinglian {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-hezuozhaoshang {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.bg-kuaihe {width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;}
+.btn-yunpingtai {position: absolute;bottom: 36.5%;right: 9.6%;z-index: 5;width: 7%;cursor: pointer;}
+.btn-jingxuanshangcheng {position: absolute;bottom: 35%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-pinpaishangcheng {position: absolute;bottom: 29%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-zuishanggongfu {position: absolute;bottom: 42%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-gebicangku {position: absolute;bottom: 32%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-putaojiu {position: absolute;bottom: 38%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-goujiuwang {position: absolute;bottom: 47%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-tianshengjuepei {position: absolute;bottom: 47%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-yixiang {position: absolute;bottom: 30.5%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-jiumama {position: absolute;bottom: 30.5%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-gongyinglian {position: absolute;bottom: 47%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-hezuozhaoshang {position: absolute;bottom: 37%;right: 9.6%;z-index: 5;width: 7%;}
+.btn-kuaihe {position: absolute;bottom: 41.5%;right: 9.6%;z-index: 5;width: 7%;}

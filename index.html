@@ -10,28 +10,7 @@
 		<!--禁止百度转码-->
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<title>1919生态圈全景图 | 1919酒类直供</title>
-		<style type="text/css">
-			img {
-				border: 0;
-			}
-			
-			.loading {
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 999;
-				/*这里的宽高百分比继承自父类或者父类的父类，所以上面给html和body设置height:100%;这样这里就可以继承到了*/
-				width: 100%;
-				height: 100%;
-				text-align: center;
-				font-size: 30px;
-				background-color: #eee;
-			}
-			
-			.propress {
-				margin-top: 300px;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
 		<!--Jquery-Scrollify 插件整屏滚动效果引用文件-->
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
 	</head>
@@ -45,111 +24,110 @@
 
 		<div class="dowebok" id="dowebok">
 			<div class="section">
-				<div style="position: relative;">
-
-					<a style="cursor: pointer;" id="tu-kuaihe">
-						<img style="position: absolute;top: 48%;left: 45%;display: block;width: 157px;height: 159px;z-index: 3;" src="img/kuaihe.png" />
+				<div class="section01">
+					<a id="tu-kuaihe">
+						<img class="kuaihe" src="img/kuaihe.png" />
 					</a>
-					<a>
-						<img style="position: absolute;top: 4%;left: 44.5%;display: block;height: 180px;" src="img/changjia.png" />
+					<a class="nocursor">
+						<img class="changjia" src="img/changjia.png" />
 					</a>
-					<a>
-						<img style="position: absolute;top: 70%;left: 44.5%;display: block;height: 180px;" src="img/xiaofeizhe.png" />
+					<a class="nocursor">
+						<img class="xiaofeizhe" src="img/xiaofeizhe.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-yixiang">
-						<img style="position: absolute;top: 32%;left: 15%;display: block;" src="img/yixiang.png" />
+					<a id="tu-yixiang">
+						<img class="yixiang" src="img/yixiang.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-jinpin">
-						<img style="position: absolute;top: 37%;left: 24%;display: block;" src="img/jingpin.png" />
+					<a id="tu-jinpin">
+						<img class="jingpin" src="img/jingpin.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-gebicangku">
-						<img style="position: absolute;top: 26%;left: 35%;display: block;" src="img/gebicangku.png" />
+					<a id="tu-gebicangku">
+						<img class="gebicangku" src="img/gebicangku.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-wanjiuwang">
-						<img style="position: absolute;top: 42%;left: 35%;z-index: 3;display: block;" src="img/putaojiu.png" />
+					<a id="tu-wanjiuwang">
+						<img class="putaojiu" src="img/putaojiu.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-goujiuwang">
-						<img style="position: absolute;top: 26%;left: 58%;display: block;" src="img/goujiuwang.png" />
+					<a id="tu-goujiuwang">
+						<img class="goujiuwang" src="img/goujiuwang.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-pinpaishangcheng">
-						<img style="position: absolute;top: 40%;left: 55%;display: block;z-index: 3;" src="img/pinpaishangcheng.png" />
+					<a id="tu-pinpaishangcheng">
+						<img class="pinpaishangcheng" src="img/pinpaishangcheng.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-zuishanggongfu">
-						<img style="position: absolute;top: 37%;left: 66%;display: block;" src="img/zuishanggongfu.png" />
+					<a id="tu-zuishanggongfu">
+						<img class="zuishanggongfu" src="img/zuishanggongfu.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-tianshengjuepei">
-						<img style="position: absolute;top: 32%;left: 77%;	display: block;" src="img/tianshengjuepei.png" />
+					<a id="tu-tianshengjuepei">
+						<img class="tianshengjuepei" src="img/tianshengjuepei.png" />
 					</a>
-					<a style="cursor: pointer;" id="tu-yunpingtai">
-						<img style="position: absolute;top: 25%;left: 40.5%;display: block;height: 260px;" src="img/yunpingtai.png" />
+					<a id="tu-yunpingtai">
+						<img class="yunpingtai" src="img/yunpingtai.png" />
 					</a>
-					<img style="width: 100%;" id="beijingyun" src="img/beijingyun.png" />
+					<img id="beijingyun" class="beijingyun" src="img/beijingyun.png" />
 				</div>
 			</div>
 			<div class="section" id="yunpingtai">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/yunpingtai-1.png" />
-				<a target="_blank" href="yunpingtai_2.html"><img style="position: absolute;bottom: 36.5%;right: 9.6%;z-index: 5;width: 7%;cursor: pointer;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-yunpingtai" src="img/yunpingtai-1.png" />
+				<a target="_blank" href="yunpingtai_2.html"><img class="btn-yunpingtai" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="jingxuanshangcheng">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/jingxuanshangcheng-2.png" />
-				<a><img style="position: absolute;bottom: 35%;right: 9.6%;z-index: 5;width: 7%;" src="img/jijiangshangxian.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-jingxuanshangcheng" src="img/jingxuanshangcheng-2.png" />
+				<a><img class="btn-jingxuanshangcheng" src="img/jijiangshangxian.png" /></a>
 			</div>
 			<div class="section" id="pinpaishangcheng">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/pinpaishangcheng-3.png" />
-				<a target="_blank" href="pingpaishangcheng_2.html"><img style="position: absolute;bottom: 29%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-pinpaishangcheng" src="img/pinpaishangcheng-3.png" />
+				<a target="_blank" href="pingpaishangcheng_2.html"><img class="btn-pinpaishangcheng" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="zuishanggongfu">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/zuishanggongfu-4.png" />
-				<a target="_blank" href="zuishanggongfu_2.html"><img style="position: absolute;bottom: 42%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-zuishanggongfu" src="img/zuishanggongfu-4.png" />
+				<a target="_blank" href="zuishanggongfu_2.html"><img class="btn-zuishanggongfu" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="gebicangku">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/gebicangku-5.png" />
-				<a target="_blank" href="gebicangku_2.html"><img style="position: absolute;bottom: 32%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-gebicangku" src="img/gebicangku-5.png" />
+				<a target="_blank" href="gebicangku_2.html"><img class="btn-gebicangku" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="putaojiu">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/putaojiu-6.png" />
-				<a target="_blank" href="putaojiupingdao_2.html"><img style="position: absolute;bottom: 38%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-putaojiu" src="img/putaojiu-6.png" />
+				<a target="_blank" href="putaojiupingdao_2.html"><img class="btn-putaojiu" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="goujiuwang">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/goujiuwang-7.png" />
-				<a target="_blank" href="goujiuwang_2.html"><img style="position: absolute;bottom: 47%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-goujiuwang" src="img/goujiuwang-7.png" />
+				<a target="_blank" href="goujiuwang_2.html"><img class="btn-goujiuwang" src="img/more.png" /></a>
 	</div>
 	<div class="section" id="tianshengjuepei">
-		<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-			<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;"  src="img/tianshengjuepei-8.png" />
-			<a target="_blank " href="tianshengjuepei_2.html "><img style="position: absolute;bottom: 47%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+		<img class="bg-xingkong" src="img/xingkong.jpg" />
+			<img class="bg-tianshengjuepei" src="img/tianshengjuepei-8.png" />
+			<a target="_blank " href="tianshengjuepei_2.html "><img class="btn-tianshengjuepei" src="img/more.png" /></a>
 	</div>
 	<div class="section" id="yixiang">
-		<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-			<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;"  src="img/yixiang-9.png" />
-				<a target="_blank" href="yixiang_2.html"><img style="position: absolute;bottom: 30.5%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+		<img class="bg-xingkong" src="img/xingkong.jpg" />
+			<img class="bg-yixiang" src="img/yixiang-9.png" />
+				<a target="_blank" href="yixiang_2.html"><img class="btn-yixiang" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="jiumama">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/jiumama-10.png" />
-				<a target="_blank" href="jiumama_2.html"><img style="position: absolute;bottom: 30.5%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-jiumama" src="img/jiumama-10.png" />
+				<a target="_blank" href="jiumama_2.html"><img class="btn-jiumama" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="gongyinglian">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/gongyinglian-11.png" />
-				<a target="_blank" href="gongyinglian_2.html"><img style="position: absolute;bottom: 47%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-gongyinglian" src="img/gongyinglian-11.png" />
+				<a target="_blank" href="gongyinglian_2.html"><img class="btn-gongyinglian" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="hezuozhaoshang">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/hezuozhaoshang-12.png" />
-				<a target="_blank" href="hezuozhaoshang_2.html"><img style="position: absolute;bottom: 37%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-hezuozhaoshang" src="img/hezuozhaoshang-12.png" />
+				<a target="_blank" href="hezuozhaoshang_2.html"><img class="btn-hezuozhaoshang" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="kuaihe">
-				<img style="width: 100%;height: 1050px;position: relative;z-index: 1;" src="img/xingkong.jpg" />
-				<img style="width: 80%;position: absolute;top: 14%;left: 12%;z-index: 5;" src="img/kuaihe-13.png" />
-				<a target="_blank" href="kuaihe_2.html"><img style="position: absolute;bottom: 41.5%;right: 9.6%;z-index: 5;width: 7%;" src="img/more.png" /></a>
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-kuaihe" src="img/kuaihe-13.png" />
+				<a target="_blank" href="kuaihe_2.html"><img class="btn-kuaihe" src="img/more.png" /></a>
 			</div>
 		</div>
 
