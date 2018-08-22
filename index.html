@@ -10,14 +10,14 @@
 		<!--禁止百度转码-->
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 		<title>1919生态圈全景图 | 1919酒类直供</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<!--Jquery-Scrollify 插件整屏滚动效果引用文件-->
 		<link rel="stylesheet" href="css/jquery.fullPage.css">
 	</head>
 
 	<body>
-		
-			<!--loading加载-->
+
+		<!--loading加载-->
 		<div class="loading">
 			<p class="propress">0%</p>
 		</div>
@@ -98,15 +98,15 @@
 				<img class="bg-xingkong" src="img/xingkong.jpg" />
 				<img class="bg-goujiuwang" src="img/goujiuwang-7.png" />
 				<a target="_blank" href="goujiuwang_2.html"><img class="btn-goujiuwang" src="img/more.png" /></a>
-	</div>
-	<div class="section" id="tianshengjuepei">
-		<img class="bg-xingkong" src="img/xingkong.jpg" />
-			<img class="bg-tianshengjuepei" src="img/tianshengjuepei-8.png" />
-			<a target="_blank " href="tianshengjuepei_2.html "><img class="btn-tianshengjuepei" src="img/more.png" /></a>
-	</div>
-	<div class="section" id="yixiang">
-		<img class="bg-xingkong" src="img/xingkong.jpg" />
-			<img class="bg-yixiang" src="img/yixiang-9.png" />
+			</div>
+			<div class="section" id="tianshengjuepei">
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-tianshengjuepei" src="img/tianshengjuepei-8.png" />
+				<a target="_blank " href="tianshengjuepei_2.html "><img class="btn-tianshengjuepei" src="img/more.png" /></a>
+			</div>
+			<div class="section" id="yixiang">
+				<img class="bg-xingkong" src="img/xingkong.jpg" />
+				<img class="bg-yixiang" src="img/yixiang-9.png" />
 				<a target="_blank" href="yixiang_2.html"><img class="btn-yixiang" src="img/more.png" /></a>
 			</div>
 			<div class="section" id="jiumama">
@@ -137,29 +137,28 @@
 		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 		<!--CND失效的话就会执行下面本地的js代码-->
 		<script>
-			if (typeof jQuery == 'undefined') {
+			if(typeof jQuery == 'undefined') {
 				document.write(unescape('%3Cscript src="js/jquery-1.11.3.js"%3E%3C/script%3E'))
 			}
 		</script>
 		<script defer="defer" src="https://apps.bdimg.com/libs/jquery-fullPage/2.7.4/jquery.fullPage.js"></script>
 		<!--Jquery-Scrollify 插件整屏滚动效果代码-->
-		
+
 		<script>
 			/*Math.max描述：
-			 返回给定的一组数字中的最大值。如果给定的参数中至少有一个参数无法被转换成数字，则会返回 NaN
-			 
-			由于 max 是 Math 的静态方法，所以应该像这样使用：Math.max()，而不是作为你创建的 Math 实例的方法(Math并非一个构造体)。
+						 返回给定的一组数字中的最大值。如果给定的参数中至少有一个参数无法被转换成数字，则会返回 NaN
+						 
+						由于 max 是 Math 的静态方法，所以应该像这样使用：Math.max()，而不是作为你创建的 Math 实例的方法(Math并非一个构造体)。
 
-			如果没有参数，则结果为 - Infinity。
+						如果没有参数，则结果为 - Infinity。
 
-			如果有任一参数不能被转换为数值，则结果为 NaN。
-			*/
+						如果有任一参数不能被转换为数值，则结果为 NaN。
+						*/
 			preloading();
-			
-			
+
 			//  图片预加载
-			function preloading () {
-	
+			function preloading() {
+
 				var imgs = [
 					'img/kuaihe.png',
 					'img/changjia.png',
@@ -207,8 +206,7 @@
 					imObj.src = src;
 				});
 			}
-			
-			
+
 			$(function() {
 				$('#dowebok').fullpage({
 					'navigation': true
