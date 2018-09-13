@@ -166,12 +166,6 @@
 		<script defer="defer" src="https://apps.bdimg.com/libs/jquery-fullPage/2.7.4/jquery.fullPage.js"></script>
 		
 		<script>
-			//	CND失效的话就会执行下面本地的js代码
-			if (typeof jQuery == 'undefined') {
-				document.write(unescape('%3Cscript src="js/jquery-1.11.3.js"%3E%3C/script%3E'));
-				document.write(unescape('%3Cscript src="js/jquery.fullPage.min.js"%3E%3C/script%3E'));
-			}
-			
 			// 判断当前的window对象是否是top对象
 			if (window != top) {
 				// 如果不是，将top对象的网址自动导向被嵌入网页的网址
